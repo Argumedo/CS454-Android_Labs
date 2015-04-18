@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="p1score">0</integer>
+    <integer name="p2score">0</integer>
+</resources>
