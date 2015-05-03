@@ -1,0 +1,185 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/view"
+        android:background="@drawable/shape"
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="0"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scrollHorizontally="true"
+            android:gravity="end"
+            android:textSize="50sp"
+            android:id="@+id/display"/>
+
+    </FrameLayout>
+
+    <Button
+        android:layout_width="@dimen/gridbox"
+        android:layout_height="50dp"
+        android:layout_below="@id/view"
+        android:id="@+id/delete"
+        android:text="Delete"
+        android:layout_alignRight="@+id/numbers"
+        />
+
+    <GridLayout
+        android:id="@+id/numbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="4"
+        android:layout_centerHorizontal="true"
+        android:useDefaultMargins="false"
+        android:layout_below="@+id/delete">
+
+        <Button
+            android:layout_height="@dimen/gridbox"
+            android:layout_width="@dimen/gridbox"
+            android:textAllCaps="false"
+            android:text="sin"
+            android:textSize="25sp"
+            android:id="@+id/sin"
+            />
+
+        <Button
+            android:layout_height="@dimen/gridbox"
+            android:layout_width="@dimen/gridbox"
+            android:textAllCaps="false"
+            android:text="cos"
+            android:id="@+id/cos"
+            android:textSize="25sp"
+            />
+
+        <Button
+            android:layout_height="@dimen/gridbox"
+            android:layout_width="@dimen/gridbox"
+            android:textAllCaps="false"
+            android:text="tan"
+            android:id="@+id/tan"
+            android:textSize="25sp"
+            />
+
+        <Button
+            android:layout_height="@dimen/gridbox"
+            android:layout_width="@dimen/gridbox"
+            android:text="i"
+            android:textAllCaps="false"
+            android:id="@+id/imaginary"
+            android:textSize="25sp"
+            />
+
+        <Button
+            android:layout_height="@dimen/gridbox"
+            android:layout_width="@dimen/gridbox"
+            android:text="ln"
+            android:textAllCaps="false"
+            android:id="@+id/ln"
+            android:textSize="25sp"
+            />
+
+        <Button
+            android:layout_height="@dimen/gridbox"
+            android:layout_width="@dimen/gridbox"
+            android:text="log"
+            android:textAllCaps="false"
+            android:id="@+id/log"
+            android:textSize="25sp"
+            />
+        <Button
+            android:layout_height="@dimen/gridbox"
+            android:layout_width="@dimen/gridbox"
+            android:textAllCaps="false"
+            android:text="π"
+            android:id="@+id/pi"
+            android:textSize="25sp"
+            />
+
+        <Button
+            android:layout_height="@dimen/gridbox"
+            android:layout_width="@dimen/gridbox"
+            android:text="e"
+            android:textAllCaps="false"
+            android:id="@+id/e"
+            android:textSize="25sp"
+            />
+
+        <Button
+            android:layout_height="@dimen/gridbox"
+            android:layout_width="@dimen/gridbox"
+            android:text="%"
+            android:id="@+id/percent"
+            android:textSize="25sp"
+            />
+
+        <Button
+            android:layout_height="@dimen/gridbox"
+            android:layout_width="@dimen/gridbox"
+            android:text="!"
+            android:id="@+id/factorial"
+            android:textSize="25sp"
+            />
+
+        <Button
+            android:layout_height="@dimen/gridbox"
+            android:layout_width="@dimen/gridbox"
+            android:text="√"
+            android:id="@+id/root"
+            android:textSize="25sp"
+            />
+
+        <Button
+            android:layout_height="@dimen/gridbox"
+            android:layout_width="@dimen/gridbox"
+            android:text="^"
+            android:id="@+id/power"
+            android:textSize="25sp"
+            />
+
+        <Button
+            android:layout_height="@dimen/gridbox"
+            android:layout_width="@dimen/gridbox"
+            android:text="("
+            android:id="@+id/openP"
+            android:textSize="25sp"
+            />
+
+        <Button
+            android:layout_height="@dimen/gridbox"
+            android:layout_width="@dimen/gridbox"
+            android:text=")"
+            android:id="@+id/closeP"
+            android:textSize="25sp"
+            />
+
+
+        <Button
+            android:layout_height="@dimen/gridbox"
+            android:layout_width="@dimen/gridbox"
+            android:text=""
+            android:textSize="25sp"
+            />
+
+        <Button
+            android:layout_height="@dimen/gridbox"
+            android:layout_width="@dimen/gridbox"
+            android:text=""
+            android:textSize="25sp"
+            />
+    </GridLayout>
+
+</RelativeLayout>
